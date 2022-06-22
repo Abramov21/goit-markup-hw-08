@@ -1,0 +1,38 @@
+.specifics {
+
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+
+  // specifics__title
+
+
+.specifics__title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.specifics__list {
+  display: flex;
+  list-style: none;
+}
+
+
+.specifics__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 102px;
+  background-color: #F5F4FA;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: var(--bordered);
+}
+
+.specifics__text {
+  color: var(--second-color);
+}

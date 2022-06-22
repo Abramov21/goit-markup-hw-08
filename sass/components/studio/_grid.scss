@@ -1,0 +1,15 @@
+
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+
+.grid-item {
+    flex-basis: calc((100%-var(--indent)*var(--items)))/var(--items);
+    margin: 15px;
+}
+
+
