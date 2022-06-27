@@ -1,24 +1,72 @@
 .conteiner {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
-    padding-right: 15px;
-    padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
   }
 
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
 
-  .page-header__conteiner {
+.page-header__conteiner {
+  display: flex;
+  align-items: center;
+  padding: auto;
+
+  // @media screen and (min-width: 480px) {
+  //   .container {
+  //     width: 480px;
+  //   }
+  // }
+
+  // @media screen and (min-width: 768px) {
+  //   .container {
+  //     width: 768px;
+  //   }
+  // }
+
+  // @media screen and (min-width: 1200px) {
+  //   .container {
+  //     width: 1200px;
+  //   }
+  // }
+}
+
+.team__conteiner {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 1200px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.footer__conteiner {
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
-    padding: auto;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  .conteiner__specifics {
-    display: flex;
-    flex-direction: row;
+  @media screen and (min-width: 1200px) {
+    justify-content: left;
+    text-align: left;
+    flex-wrap: nowrap;
   }
-
-  .footer__conteiner {
-    display: flex;
-    align-items: baseline;
-  }
+}

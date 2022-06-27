@@ -1,20 +1,35 @@
-
 .logo {
-    width: 145px;
-    font-family: 'Raleway';
-    font-weight: 700;
+  display: block;
+  color: var(--logo-text-color);
+  text-decoration: none;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.19;
+  @media screen and (min-width: 1200px) {
     font-size: 26px;
-    line-height: 1.19;
-    color: var(--logo-text-color);
-    margin-right: 93px;
+  }
+}
+.logo__position {
+  @media screen and (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 15px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 1200px) {
     padding-top: 24px;
     padding-bottom: 25px;
-
-    text-decoration: none;
+    margin-right: 93px;
+    margin-left: 0;
+  }
 }
 
-.logo__accent{
-    color: var(--accent-color);
+.logo__web {
+  color: var(--accent-color);
 }
-
-
